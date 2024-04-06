@@ -14,7 +14,7 @@ jobs:
       - name: Sicronia com o git
       - uses: kanadgrupta/glitch-sync@v3.0.1
         with: 
-          auth-token: '${{ secrets.authToken }}'
-          project-id : '${{ secrets.Project-Id }}'      
+          auth-token: '${{ secrets.AUTHTOKEN }}'
+          project-id : '${{ secrets.PROJECTID }}'      
 
       
