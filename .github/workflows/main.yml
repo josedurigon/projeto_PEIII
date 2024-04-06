@@ -1,20 +1,22 @@
-name: Aula de continuous integration
+name: Aula de Integração continua
 
-on: push 
+on: push
+
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    
     steps:
       - uses: actions/checkout@v3
 
-      - name: mostra texto
-      - run: echo Aula Ok
+      - name:  Mostra texto
+        run: echo AUla Ok
 
-      - name: Sicronia com o git
-      - uses: kanadgrupta/glitch-sync@v3.0.1
-        with: 
-          auth-token: '${{ secrets.AUTHTOKEN }}'
-          project-id : '${{ secrets.PROJECTID }}'      
-
+      - name: Sincronia com o Glitch
+        uses: kanadgupta/glitch-sync@v3.0.1
+        with:
+          auth-token: '${{ secrets.authToken }}'
+          project-id: '${{ secrets.projectId }}'
+        
       
+    
